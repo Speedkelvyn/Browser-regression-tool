@@ -2,7 +2,7 @@
 
 OLS, logit and probit on any CSV file, in the browser. The file is read locally and never uploaded.
 
-**Use it:** https://speedkelvyn.github.io/Speedy.github.io/tools/regression/ (press "Load sample data" to try it)
+**Use it:** https://speedkelvyn.github.io/Browser-regression-tool/ (press "Load sample data" to try it)
 
 ## What it does
 

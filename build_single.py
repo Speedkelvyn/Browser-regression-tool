@@ -17,6 +17,5 @@ for name in ("regression.js", "app.js"):
     assert page.count(tag) == 1, tag
     page = page.replace(tag, f"<script>\n{(HERE / name).read_text(encoding='utf-8')}\n</script>")
 page = page.replace("</body>", f'<script type="text/plain" id="sampleData">\n{sample}</script>\n</body>')
-page = page.replace('href="../../"', 'href="https://speedkelvyn.github.io/Speedy.github.io/"')
 out.write_text(page, encoding="utf-8")
 print(f"wrote {out} ({out.stat().st_size / 1024:.0f} KB)")
